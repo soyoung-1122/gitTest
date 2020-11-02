@@ -2,3 +2,5 @@ git practice
 
 test1 branch first commit
 test1 branch second commit
+
+test2 pull test
