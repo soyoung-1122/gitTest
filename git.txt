@@ -1,0 +1,54 @@
+git tutorial  :  https://backlog.com/git-tutorial/kr/
+
+작업하는 디렉토리 - 작업트리
+저장소에 저장하기 전 임시저장소 - 인덱스
+
+로컬 저장소 삭제하기 : .git 디렉토리 제거
+
+cmd에서 git 사용할 때 브랜치 전환 명령어  :  git checkout branchname
+delete branch :  git branch -d name
+
+rebase 개념  https://suhwan.dev/2018/01/21/Git-Rebase-1/
+git rebase -i  설명과 옵션들 https://beomseok95.tistory.com/231
+	squash : 통합하려면 가장 최근 commit에 pick 대신 squash 줘야함 중간 커밋 버전에 주면 안되는듯
+	edit : 수정할 커밋의 pick을 edit으로 바꾸면 수정 가능. 
+
+이전 버전으로 돌아가기 reset / revert 의 차이  https://victorydntmd.tistory.com/79
+
+-reset은 되돌아간 커밋 버전 이후의 버전은 다 날려버림 
+모드 설정에 따라 복구 정도 설정 가능함(기본 mixed)
+명령어 : git reset --hard HEAD~   (~ 하나면 바로 전단계 커밋)
+git reset --hard ORIG_HEAD   :   실수로 리셋했을 경우
+
+-revert는 살아있음
+
+pull 하면 가져와서 자동 merge됨
+fetch 사용하면 합치지 않고 최신 커밋 이력 가져오기만 함
+
+
+--amend 이전 커밋했던 내용에 추가나 설명 수정 가능
+사용 : git commit --amend
+
+git cherry-pick <commit number?id?> 하고 커밋해주면 다른 브랜치에서 특정 커밋만 가져오기 가능. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
